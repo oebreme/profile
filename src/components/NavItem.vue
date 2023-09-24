@@ -1,14 +1,17 @@
-<script setup>
-defineProps({
-  label: {
-    type: String,
-    required: true
+<script lang="ts">
+import {defineComponent, onMounted} from "vue";
+
+export default defineComponent({
+  name: 'NavItem',
+  props: {
+    label: { type: String, required: true },
+    link: { type: String, required: true }
   },
-  link: {
-    type: String,
-    required: true
-  }
+  mounted: function(): void {
+    console.log("NavItem is mounted!")
+  },
 });
+
 </script>
 
 <template>
