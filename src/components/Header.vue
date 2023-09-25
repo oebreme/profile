@@ -1,15 +1,13 @@
-<script setup>
+<script setup lang="ts">
 
-import NavItem from "@/components/NavItem.vue";
+import NavBar from "@/components/NavBar.vue";
+
 </script>
 
 <template>
-  <nav>
-    <NavItem link="#" label="Home"/>
-    <NavItem link="#" label="Dashboard"/>
-    <NavItem link="#" label="Resources"/>
-    <NavItem link="#" label="Documentation"/>
-  </nav>
+  <header>
+    <NavBar/>
+  </header>
 </template>
 
 <style scoped>

@@ -1,5 +1,5 @@
 <script lang="ts">
-import {defineComponent, onMounted} from "vue";
+import {defineComponent} from "vue";
 
 export default defineComponent({
   name: 'NavItem',
@@ -8,7 +8,6 @@ export default defineComponent({
     link: { type: String, required: true }
   },
   mounted: function(): void {
-    console.log("NavItem is mounted!")
   },
 });
 
@@ -18,10 +17,6 @@ export default defineComponent({
   <a v-bind:href="link" class="nav-item">
     {{ label }}
   </a>
-
-  <h1 class="text-3xl ">
-    Hello world!
-  </h1>
 </template>
 
 <style scoped>
